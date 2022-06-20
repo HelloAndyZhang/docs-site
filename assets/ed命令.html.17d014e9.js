@@ -1,0 +1,32 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as a,c as d,a as n}from"./app.29f60bb5.js";const c={},o=n(`<h1 id="ed\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#ed\u547D\u4EE4" aria-hidden="true">#</a> ed\u547D\u4EE4</h1><p><code>ed</code>\u547D\u4EE4\u662F\u6587\u672C\u7F16\u8F91\u5668\uFF0C\u7528\u4E8E\u6587\u672C\u7F16\u8F91\uFF0C<code>ed</code>\u662F<code>Linux</code>\u4E2D\u529F\u80FD\u6700\u7B80\u5355\u7684\u6587\u672C\u7F16\u8F91\u7A0B\u5E8F\uFF0C\u4E00\u6B21\u4EC5\u80FD\u7F16\u8F91\u4E00\u884C\u800C\u975E\u5168\u5C4F\u5E55\u65B9\u5F0F\u7684\u64CD\u4F5C\u3002<code>ed</code>\u547D\u4EE4\u5E76\u4E0D\u662F\u4E00\u4E2A\u5E38\u7528\u7684\u547D\u4EE4\uFF0C\u4E00\u822C\u4F7F\u7528\u6BD4\u8F83\u591A\u7684\u662F<code>vi</code>\u6307\u4EE4\uFF0C\u4F46<code>ed</code>\u6587\u672C\u7F16\u8F91\u5668\u5BF9\u4E8E\u7F16\u8F91\u5927\u6587\u4EF6\u6216\u5BF9\u4E8E\u5728<code>shell</code>\u811A\u672C\u7A0B\u5E8F\u4E2D\u8FDB\u884C\u6587\u672C\u7F16\u8F91\u5F88\u6709\u7528\u3002\u5982\u679C\u4F7F\u7528\u6587\u4EF6\u540D\u53C2\u6570\u8C03\u7528<code>ed</code>\uFF0C\u5219\u6587\u4EF6\u7684\u526F\u672C\u5C06\u88AB\u8BFB\u5165\u7F16\u8F91\u5668\u7684\u7F13\u51B2\u533A\uFF0C\u5BF9\u8BE5\u526F\u672C\u8FDB\u884C\u66F4\u6539\uFF0C\u800C\u4E0D\u662F\u76F4\u63A5\u5BF9\u6587\u4EF6\u672C\u8EAB\u8FDB\u884C\u66F4\u6539\u3002\u9000\u51FA<code>ed</code>\u540E\uFF0C\u4EFB\u4F55\u672A\u4F7F\u7528<code>w</code>\u547D\u4EE4\u663E\u5F0F\u4FDD\u5B58\u7684\u66F4\u6539\u90FD\u5C06\u4E22\u5931\u3002\u7F16\u8F91\u6709\u4E24\u79CD\u4E0D\u540C\u7684\u6A21\u5F0F\uFF1A\u547D\u4EE4\u548C\u8F93\u5165\u3002\u7B2C\u4E00\u6B21\u8C03\u7528\u65F6\uFF0C<code>ed</code>\u5904\u4E8E\u547D\u4EE4\u6A21\u5F0F\uFF0C\u5728\u8FD9\u79CD\u6A21\u5F0F\u4E0B\uFF0C\u547D\u4EE4\u4ECE\u6807\u51C6\u8F93\u5165\u4E2D\u8BFB\u53D6\u5E76\u6267\u884C\u4EE5\u64CD\u4F5C\u7F16\u8F91\u5668\u7F13\u51B2\u533A\u7684\u5185\u5BB9\u3002</p><h2 id="\u8BED\u6CD5" tabindex="-1"><a class="header-anchor" href="#\u8BED\u6CD5" aria-hidden="true">#</a> \u8BED\u6CD5</h2><div class="language-bash ext-sh"><pre class="language-bash"><code>ed <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+</code></pre></div><h2 id="\u53C2\u6570" tabindex="-1"><a class="header-anchor" href="#\u53C2\u6570" aria-hidden="true">#</a> \u53C2\u6570</h2><ul><li><code>-G, --traditional</code>: \u5728\u517C\u5BB9\u6A21\u5F0F\u4E0B\u8FD0\u884C\u3002</li><li><code>-l, --loose-exit-status</code>: \u5373\u4F7F\u547D\u4EE4\u5931\u8D25\uFF0C\u4E5F\u4EE5\u96F6\u72B6\u6001\u9000\u51FA(\u6B63\u5E38\u7EC8\u6B62)\u3002\u4F8B\u5982\u5982\u679C\u5C06<code>ed</code>\u8BBE\u7F6E\u4E3A<code>crontab</code>\u7684\u7F16\u8F91\u5668\uFF0C\u5219\u6B64\u9009\u9879\u5F88\u6709\u7528\u3002</li><li><code>-p, --prompt=STRING</code>: <code>ed</code>\u901A\u5E38\u5728\u7A7A\u767D\u884C\u7B49\u5F85\u7528\u6237\u8F93\u5165\uFF0C\u6B64\u9009\u9879\u5C06\u4F7F\u7528\u5B57\u7B26\u4E32\u4F5C\u4E3A\u63D0\u793A\u3002</li><li><code>-r, --restricted</code>: \u5728\u53D7\u9650\u6A21\u5F0F\u4E0B\u8FD0\u884C\u3002</li><li><code>-s, --quiet, --silent</code>: \u7981\u6B62\u8BCA\u65AD\u3002</li><li><code>-v, --verbose</code>: \u8BE6\u7EC6\u64CD\u4F5C\u3002</li><li><code>-h, --help</code>: \u663E\u793A\u5E2E\u52A9\u4FE1\u606F\u3002</li><li><code>-V, --version</code>: \u663E\u793A\u7248\u672C\u4FE1\u606F\u3002</li></ul><h2 id="\u72B6\u6001\u7801" tabindex="-1"><a class="header-anchor" href="#\u72B6\u6001\u7801" aria-hidden="true">#</a> \u72B6\u6001\u7801</h2><ul><li><code>0</code>\u8868\u793A\u6B63\u5E38\u9000\u51FA\u3002</li><li><code>1</code>\u8868\u793A\u73AF\u5883\u95EE\u9898\uFF0C\u4F8B\u5982\u6587\u4EF6\u672A\u627E\u5230\u3001\u65E0\u6548\u6807\u5FD7\u3001<code>I/O</code>\u9519\u8BEF\u7B49\u7B49\u3002</li><li><code>2</code>\u8868\u793A\u635F\u574F\u6216\u65E0\u6548\u7684\u8F93\u5165\u6587\u4EF6\u3002</li><li><code>3</code>\u8868\u793A\u5185\u90E8\u4E00\u81F4\u6027\u9519\u8BEF(\u5982\u8F6F\u4EF6<code>bug</code>)\uFF0C\u5BFC\u81F4<code>ed</code>\u6B7B\u673A\u3002</li></ul><h2 id="\u793A\u4F8B" tabindex="-1"><a class="header-anchor" href="#\u793A\u4F8B" aria-hidden="true">#</a> \u793A\u4F8B</h2><p>\u6BD4\u8F83\u5B8C\u6574\u7684\u7F16\u8F91\u793A\u4F8B\u3002</p><div class="language-bash ext-sh"><pre class="language-bash"><code>ed
+a
+My name is Titan.
+And I love Perl very much.
+<span class="token builtin class-name">.</span>
+i
+I am <span class="token number">24</span>.
+<span class="token builtin class-name">.</span>
+c
+I am <span class="token number">24</span> years old. 
+<span class="token builtin class-name">.</span>
+w readme.txt
+q
+</code></pre></div><div class="language-text ext-text"><pre class="language-text"><code>ed                          # \u6FC0\u6D3B ed \u547D\u4EE4 
+a                           # \u544A\u8BC9 ed \u6211\u8981\u7F16\u8F91\u65B0\u6587\u4EF6 
+My name is Titan.           # \u8F93\u5165\u7B2C\u4E00\u884C\u5185\u5BB9 
+And I love Perl very much.  # \u8F93\u5165\u7B2C\u4E8C\u884C\u5185\u5BB9 
+.                           # \u8FD4\u56DE ed \u7684\u547D\u4EE4\u884C\u72B6\u6001 
+i                           # \u544A\u8BC9 ed \u6211\u8981\u5728\u6700\u540E\u4E00\u884C\u4E4B\u524D\u63D2\u5165\u5185\u5BB9 
+I am 24.                    # \u5C06 I am 24. \u63D2\u5165 My name is Titan. \u548C And I love Perl very much. \u4E4B\u95F4 
+.                           # \u8FD4\u56DE ed \u7684\u547D\u4EE4\u884C\u72B6\u6001 
+c                           # \u544A\u8BC9 ed \u6211\u8981\u66FF\u6362\u6700\u540E\u4E00\u884C\u8F93\u5165\u5185\u5BB9 
+I am 24 years old.          # \u5C06 I am 24. \u66FF\u6362\u6210 I am 24 years old. \uFF0C\u8FD9\u91CC\u66FF\u6362\u7684\u662F\u6700\u540E\u8F93\u7684\u5185\u5BB9
+.                           # \u8FD4\u56DE ed \u7684\u547D\u4EE4\u884C\u72B6\u6001 
+w readme.txt                # \u5C06\u6587\u4EF6\u547D\u540D\u4E3A readme.txt \u5E76\u4FDD\u5B58\uFF0C\u5982\u679C\u662F\u7F16\u8F91\u5DF2\u7ECF\u5B58\u5728\u7684\u6587\u4EF6\uFF0C\u53EA\u9700\u8981\u6572\u5165 w \u5373\u53EF
+q                           # \u5B8C\u5168\u9000\u51FA ed \u7F16\u8F91\u5668 
+</code></pre></div><div class="language-text ext-text"><pre class="language-text"><code>cat readme.txt
+# My name is Titan.
+# I am 24 years old. 
+# And I love Perl very much.
+</code></pre></div>`,13),s=[o];function l(i,t){return a(),d("div",null,s)}var p=e(c,[["render",l],["__file","ed\u547D\u4EE4.html.vue"]]);export{p as default};

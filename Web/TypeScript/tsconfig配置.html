@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.48" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <meta property="og:url" content="https://tgy.ink/Web/TypeScript/tsconfig%E9%85%8D%E7%BD%AE.html"><meta property="og:site_name" content=" "><meta property="og:title" content="tsconfig配置"><meta property="og:description" content="tsconfig配置的文档"><meta property="og:type" content="article"><meta property="og:updated_time" content="2022-04-28T03:20:16.000Z"><meta property="og:locale" content="zh-CN"><meta property="article:modified_time" content="2022-04-28T03:20:16.000Z"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"><link rel="icon" type="image/png" sizes="64x64" href="/images/icons/icons8-emoji-64.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/icons/icons8-emoji-32.png"><link rel="stylesheet" href="//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css"><script type="text/javascript" src="/js/trackEvent.js"></script><script rel="text/javascript">console.log('hello world')</script><title>tsconfig配置 |  </title><meta name="description" content="tsconfig配置的文档">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d2025;
+      }
+
+      html,
+      body {
+        background-color: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.querySelector("html").setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/style.8ca897af.css">
+    <link rel="modulepreload" href="/assets/app.29f60bb5.js"><link rel="modulepreload" href="/assets/tsconfig配置.html.00ea179e.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js"><link rel="modulepreload" href="/assets/tsconfig配置.html.cb169898.js"><link rel="prefetch" href="/assets/index.html.2e5ee838.js"><link rel="prefetch" href="/assets/Shortcuts.html.a8572fdb.js"><link rel="prefetch" href="/assets/zshrc区别.html.06a582c4.js"><link rel="prefetch" href="/assets/index.html.e48b3c96.js"><link rel="prefetch" href="/assets/Workflow.v1.html.672db8f8.js"><link rel="prefetch" href="/assets/index.html.49d73877.js"><link rel="prefetch" href="/assets/aspell命令.html.e082c484.js"><link rel="prefetch" href="/assets/awk命令.html.3b5a8d8f.js"><link rel="prefetch" href="/assets/cat命令.html.b056463b.js"><link rel="prefetch" href="/assets/chattr命令.html.4587833d.js"><link rel="prefetch" href="/assets/chmod命令.html.1e92b056.js"><link rel="prefetch" href="/assets/chown命令.html.55410048.js"><link rel="prefetch" href="/assets/cmp命令.html.5c2800b4.js"><link rel="prefetch" href="/assets/colrm命令.html.4a291ae6.js"><link rel="prefetch" href="/assets/col命令.html.cffbeefb.js"><link rel="prefetch" href="/assets/comm命令.html.6dbcd639.js"><link rel="prefetch" href="/assets/cp命令.html.d90b7024.js"><link rel="prefetch" href="/assets/csplit命令.html.c33758f7.js"><link rel="prefetch" href="/assets/curl命令.html.abf61671.js"><link rel="prefetch" href="/assets/cut命令.html.72ada91c.js"><link rel="prefetch" href="/assets/diffstat命令.html.df7cb943.js"><link rel="prefetch" href="/assets/diff命令.html.fcc05ab8.js"><link rel="prefetch" href="/assets/ed命令.html.e40b02fa.js"><link rel="prefetch" href="/assets/egrep命令.html.9d7acf47.js"><link rel="prefetch" href="/assets/expr命令.html.90ca35ae.js"><link rel="prefetch" href="/assets/ex命令.html.e7436caf.js"><link rel="prefetch" href="/assets/fgrep命令.html.7e324696.js"><link rel="prefetch" href="/assets/file命令.html.a1e7577f.js"><link rel="prefetch" href="/assets/find命令.html.46f843a4.js"><link rel="prefetch" href="/assets/fmt命令.html.7e2f28a1.js"><link rel="prefetch" href="/assets/fold命令.html.7637c4da.js"><link rel="prefetch" href="/assets/grep命令.html.2867a91a.js"><link rel="prefetch" href="/assets/ip命令.html.db5847e1.js"><link rel="prefetch" href="/assets/join命令.html.db0e856d.js"><link rel="prefetch" href="/assets/journalctl命令.html.e6d63493.js"><link rel="prefetch" href="/assets/kill命令.html.01cab2a7.js"><link rel="prefetch" href="/assets/less命令.html.981ca8f9.js"><link rel="prefetch" href="/assets/ln命令.html.ecb30871.js"><link rel="prefetch" href="/assets/locate命令.html.6e23b828.js"><link rel="prefetch" href="/assets/look命令.html.aeeec434.js"><link rel="prefetch" href="/assets/lsattr命令.html.bece8cff.js"><link rel="prefetch" href="/assets/mc命令.html.277a0c57.js"><link rel="prefetch" href="/assets/menu.html.974fc1e1.js"><link rel="prefetch" href="/assets/mktemp命令.html.6c300237.js"><link rel="prefetch" href="/assets/more命令.html.2d029bb0.js"><link rel="prefetch" href="/assets/mv命令.html.89a2e8bd.js"><link rel="prefetch" href="/assets/netstat命令.html.5d147e03.js"><link rel="prefetch" href="/assets/od命令.html.f50e382d.js"><link rel="prefetch" href="/assets/paste命令.html.4215cd90.js"><link rel="prefetch" href="/assets/patch命令.html.1f916797.js"><link rel="prefetch" href="/assets/pico命令.html.2d14577e.js"><link rel="prefetch" href="/assets/ps命令.html.65a52076.js"><link rel="prefetch" href="/assets/rcp命令.html.eaded946.js"><link rel="prefetch" href="/assets/read命令.html.596720b3.js"><link rel="prefetch" href="/assets/rm命令.html.4801e207.js"><link rel="prefetch" href="/assets/route命令.html.20a8e1d5.js"><link rel="prefetch" href="/assets/scp命令.html.77b7f6c6.js"><link rel="prefetch" href="/assets/sed命令.html.ebb9870b.js"><link rel="prefetch" href="/assets/sort命令.html.025c287a.js"><link rel="prefetch" href="/assets/split命令.html.babc8790.js"><link rel="prefetch" href="/assets/systemctl命令.html.4a1b05a3.js"><link rel="prefetch" href="/assets/tee命令.html.994ea8ce.js"><link rel="prefetch" href="/assets/tmpwatch命令.html.dc7a67bc.js"><link rel="prefetch" href="/assets/top命令.html.9464e2d8.js"><link rel="prefetch" href="/assets/touch命令.html.a23d4eee.js"><link rel="prefetch" href="/assets/traceroute命令.html.0375b879.js"><link rel="prefetch" href="/assets/tr命令.html.d2562377.js"><link rel="prefetch" href="/assets/umask命令.html.e068049f.js"><link rel="prefetch" href="/assets/updatedb命令.html.28bca98a.js"><link rel="prefetch" href="/assets/whereis命令.html.d42dd1da.js"><link rel="prefetch" href="/assets/which命令.html.e46780b0.js"><link rel="prefetch" href="/assets/wakaTime.html.822b9300.js"><link rel="prefetch" href="/assets/1px边框.html.3d544411.js"><link rel="prefetch" href="/assets/常用样式.html.ef752b99.js"><link rel="prefetch" href="/assets/文本溢出.html.54a2600b.js"><link rel="prefetch" href="/assets/样式兼容.html.74e5176c.js"><link rel="prefetch" href="/assets/网站变灰.html.e2bd3c13.js"><link rel="prefetch" href="/assets/重置滚动条.html.540c8794.js"><link rel="prefetch" href="/assets/chrome调试.html.4e1a87de.js"><link rel="prefetch" href="/assets/React.html.d76df9c9.js"><link rel="prefetch" href="/assets/Vue.html.fd59ee3a.js"><link rel="prefetch" href="/assets/meta模板.html.d4aaf12a.js"><link rel="prefetch" href="/assets/常用函数.html.1cb64f34.js"><link rel="prefetch" href="/assets/数组技巧.html.12fb5b56.js"><link rel="prefetch" href="/assets/MiniProgram.html.58d8f165.js"><link rel="prefetch" href="/assets/Mobile.html.c2d7d0bc.js"><link rel="prefetch" href="/assets/Git.html.c0c0230c.js"><link rel="prefetch" href="/assets/NPM.html.1862e126.js"><link rel="prefetch" href="/assets/工具函数.html.9539ec01.js"><link rel="prefetch" href="/assets/404.html.7138c186.js"><link rel="prefetch" href="/assets/index.html.bf773520.js"><link rel="prefetch" href="/assets/Shortcuts.html.37938215.js"><link rel="prefetch" href="/assets/zshrc区别.html.8e0bab9b.js"><link rel="prefetch" href="/assets/index.html.5acb444d.js"><link rel="prefetch" href="/assets/Workflow.v1.html.fe25e91f.js"><link rel="prefetch" href="/assets/index.html.de50a562.js"><link rel="prefetch" href="/assets/aspell命令.html.eafa31c1.js"><link rel="prefetch" href="/assets/awk命令.html.ec850f5c.js"><link rel="prefetch" href="/assets/cat命令.html.9328e705.js"><link rel="prefetch" href="/assets/chattr命令.html.a9b14a98.js"><link rel="prefetch" href="/assets/chmod命令.html.88e37540.js"><link rel="prefetch" href="/assets/chown命令.html.a2b03beb.js"><link rel="prefetch" href="/assets/cmp命令.html.21df66d0.js"><link rel="prefetch" href="/assets/colrm命令.html.0e470017.js"><link rel="prefetch" href="/assets/col命令.html.2f8b701a.js"><link rel="prefetch" href="/assets/comm命令.html.826a4758.js"><link rel="prefetch" href="/assets/cp命令.html.c4619355.js"><link rel="prefetch" href="/assets/csplit命令.html.920f916d.js"><link rel="prefetch" href="/assets/curl命令.html.1915d963.js"><link rel="prefetch" href="/assets/cut命令.html.e323791b.js"><link rel="prefetch" href="/assets/diffstat命令.html.5546d0a9.js"><link rel="prefetch" href="/assets/diff命令.html.31ff89c1.js"><link rel="prefetch" href="/assets/ed命令.html.17d014e9.js"><link rel="prefetch" href="/assets/egrep命令.html.2626b445.js"><link rel="prefetch" href="/assets/expr命令.html.a8867289.js"><link rel="prefetch" href="/assets/ex命令.html.6d07dd3c.js"><link rel="prefetch" href="/assets/fgrep命令.html.6bf910aa.js"><link rel="prefetch" href="/assets/file命令.html.cbd04bc5.js"><link rel="prefetch" href="/assets/find命令.html.ce57171d.js"><link rel="prefetch" href="/assets/fmt命令.html.9a2de171.js"><link rel="prefetch" href="/assets/fold命令.html.0369e9a4.js"><link rel="prefetch" href="/assets/grep命令.html.909990e6.js"><link rel="prefetch" href="/assets/ip命令.html.5679a692.js"><link rel="prefetch" href="/assets/join命令.html.94731587.js"><link rel="prefetch" href="/assets/journalctl命令.html.59175a37.js"><link rel="prefetch" href="/assets/kill命令.html.2e34f518.js"><link rel="prefetch" href="/assets/less命令.html.43f5c067.js"><link rel="prefetch" href="/assets/ln命令.html.568bc1bf.js"><link rel="prefetch" href="/assets/locate命令.html.de21ac79.js"><link rel="prefetch" href="/assets/look命令.html.322f7f98.js"><link rel="prefetch" href="/assets/lsattr命令.html.c2cbbe98.js"><link rel="prefetch" href="/assets/mc命令.html.b9638fef.js"><link rel="prefetch" href="/assets/menu.html.024d3b6f.js"><link rel="prefetch" href="/assets/mktemp命令.html.f75f66ee.js"><link rel="prefetch" href="/assets/more命令.html.60b7c3ff.js"><link rel="prefetch" href="/assets/mv命令.html.c65382d0.js"><link rel="prefetch" href="/assets/netstat命令.html.a102d33d.js"><link rel="prefetch" href="/assets/od命令.html.05c13ef9.js"><link rel="prefetch" href="/assets/paste命令.html.7eb19dad.js"><link rel="prefetch" href="/assets/patch命令.html.1740b43a.js"><link rel="prefetch" href="/assets/pico命令.html.cf1aab42.js"><link rel="prefetch" href="/assets/ps命令.html.9d240fe1.js"><link rel="prefetch" href="/assets/rcp命令.html.096deec1.js"><link rel="prefetch" href="/assets/read命令.html.a990dbbc.js"><link rel="prefetch" href="/assets/rm命令.html.53742ce2.js"><link rel="prefetch" href="/assets/route命令.html.dbdee151.js"><link rel="prefetch" href="/assets/scp命令.html.47686071.js"><link rel="prefetch" href="/assets/sed命令.html.6930e839.js"><link rel="prefetch" href="/assets/sort命令.html.7eca73b6.js"><link rel="prefetch" href="/assets/split命令.html.6f5ad8a2.js"><link rel="prefetch" href="/assets/systemctl命令.html.3e38a5be.js"><link rel="prefetch" href="/assets/tee命令.html.39401148.js"><link rel="prefetch" href="/assets/tmpwatch命令.html.fa0d808b.js"><link rel="prefetch" href="/assets/top命令.html.4b47884c.js"><link rel="prefetch" href="/assets/touch命令.html.1a2507a3.js"><link rel="prefetch" href="/assets/traceroute命令.html.00c05153.js"><link rel="prefetch" href="/assets/tr命令.html.57e35e51.js"><link rel="prefetch" href="/assets/umask命令.html.bca2da56.js"><link rel="prefetch" href="/assets/updatedb命令.html.c834bf56.js"><link rel="prefetch" href="/assets/whereis命令.html.c00fba7f.js"><link rel="prefetch" href="/assets/which命令.html.63de65c7.js"><link rel="prefetch" href="/assets/wakaTime.html.8ee5b66e.js"><link rel="prefetch" href="/assets/1px边框.html.9a9c4e5d.js"><link rel="prefetch" href="/assets/常用样式.html.1d87e1bf.js"><link rel="prefetch" href="/assets/文本溢出.html.9cd85438.js"><link rel="prefetch" href="/assets/样式兼容.html.b60837d5.js"><link rel="prefetch" href="/assets/网站变灰.html.cc034df0.js"><link rel="prefetch" href="/assets/重置滚动条.html.7a975ca6.js"><link rel="prefetch" href="/assets/chrome调试.html.fb6c7afa.js"><link rel="prefetch" href="/assets/React.html.e511a697.js"><link rel="prefetch" href="/assets/Vue.html.9f798c51.js"><link rel="prefetch" href="/assets/meta模板.html.db14e491.js"><link rel="prefetch" href="/assets/常用函数.html.7fc8f896.js"><link rel="prefetch" href="/assets/数组技巧.html.f2db5499.js"><link rel="prefetch" href="/assets/MiniProgram.html.93e5ac43.js"><link rel="prefetch" href="/assets/Mobile.html.99131b08.js"><link rel="prefetch" href="/assets/Git.html.2c11a586.js"><link rel="prefetch" href="/assets/NPM.html.0d5998a6.js"><link rel="prefetch" href="/assets/工具函数.html.5cbc6cd0.js"><link rel="prefetch" href="/assets/404.html.6d44f735.js"><link rel="prefetch" href="/assets/404.58941869.js"><link rel="prefetch" href="/assets/Layout.e233ee6b.js"><link rel="prefetch" href="/assets/photoswipe.esm.92018b73.js">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="skip-link sr-only">Skip to content</a><!--]--><div class="theme-container has-toc"><!--[--><!--[--><header class="navbar"><div class="navbar-left"><button class="toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!----><a href="/" class="brand"><img class="logo" src="/images/icons/icons-emoji-96.png" alt=" "><!----><span class="site-name hide-in-pad"> </span></a><!----></div><div class="navbar-center"><!----><nav class="nav-links"><div class="nav-item hide-in-mobile"><a href="/Web/" class="nav-link active" aria-label="Web"><span class="icon iconfont icon-javascript" style=""></span>Web<!----></a></div><div class="nav-item hide-in-mobile"><a href="/MacOS/Shortcuts.html" class="nav-link" aria-label="MacOS"><span class="icon iconfont icon-computer" style=""></span>MacOS<!----></a></div><div class="nav-item hide-in-mobile"><a href="/Project/" class="nav-link" aria-label="Project"><span class="icon iconfont icon-blog" style=""></span>Project<!----></a></div></nav><!----></div><div class="navbar-right"><!----><!----><div class="nav-item"><a class="repo-link" href="https://github.com/HelloAndyZhang/HelloAndyZhang" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" class="icon github-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="github icon" style="width:1.25rem;height:1.25rem;vertical-align:middle;"><path d="M511.957 21.333C241.024 21.333 21.333 240.981 21.333 512c0 216.832 140.544 400.725 335.574 465.664 24.49 4.395 32.256-10.07 32.256-23.083 0-11.69.256-44.245 0-85.205-136.448 29.61-164.736-64.64-164.736-64.64-22.315-56.704-54.4-71.765-54.4-71.765-44.587-30.464 3.285-29.824 3.285-29.824 49.195 3.413 75.179 50.517 75.179 50.517 43.776 75.008 114.816 53.333 142.762 40.79 4.523-31.66 17.152-53.377 31.19-65.537-108.971-12.458-223.488-54.485-223.488-242.602 0-53.547 19.114-97.323 50.517-131.67-5.035-12.33-21.93-62.293 4.779-129.834 0 0 41.258-13.184 134.912 50.346a469.803 469.803 0 0 1 122.88-16.554c41.642.213 83.626 5.632 122.88 16.554 93.653-63.488 134.784-50.346 134.784-50.346 26.752 67.541 9.898 117.504 4.864 129.834 31.402 34.347 50.474 78.123 50.474 131.67 0 188.586-114.73 230.016-224.042 242.09 17.578 15.232 33.578 44.672 33.578 90.454v135.85c0 13.142 7.936 27.606 32.854 22.87C862.25 912.597 1002.667 728.747 1002.667 512c0-271.019-219.648-490.667-490.71-490.667z"></path></svg></a></div><div class="nav-item hide-in-mobile"><button id="appearance-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="light icon" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><div id="docsearch-container"></div><!----><button class="toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span class="button-container"><span class="button-top"></span><span class="button-middle"></span><span class="button-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow left"></span></div><aside class="sidebar"><!--[--><!----><!--]--><ul class="sidebar-links"><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable active"><span class="icon iconfont icon-typescript" style=""></span><span class="title">TypeScript</span><span class="arrow down"></span></button><ul class="sidebar-links"><li><!--[--><a aria-current="page" href="/Web/TypeScript/tsconfig%E9%85%8D%E7%BD%AE.html" class="router-link-active router-link-exact-active nav-link active sidebar-link sidebar-page active" aria-label="tsconfig配置"><!---->tsconfig配置<!----></a><ul class="sidebar-sub-headers"></ul><!--]--></li><li><!--[--><a href="/Web/TypeScript/%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0.html" class="nav-link sidebar-link sidebar-page" aria-label="工具函数"><!---->工具函数<!----></a><ul class="sidebar-sub-headers"></ul><!--]--></li></ul></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-javascript" style=""></span><span class="title">JavaScript</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-frame" style=""></span><span class="title">框架</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-tool" style=""></span><span class="title">工具</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-html" style=""></span><span class="title">HTML</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-css" style=""></span><span class="title">CSS</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-launch" style=""></span><span class="title">Debug</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-mobile" style=""></span><span class="title">移动端</span><span class="arrow right"></span></button><!----></section><!--]--></li><li><!--[--><section class="sidebar-group"><button class="sidebar-heading clickable"><span class="icon iconfont icon-ci" style=""></span><span class="title">CI/CD</span><span class="arrow right"></span></button><!----></section><!--]--></li></ul><!--[--><!----><!--]--></aside><!--[--><main class="page" id="main-content"><!--[--><!----><nav class="breadcrumb disable"></nav><div class="page-title"><h1><!---->tsconfig配置</h1><div class="page-info"><!----><!----><span class="date-info" aria-label="写作日期📅" data-balloon-pos="down" isoriginal="false" pageview="false"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span>2022年4月28日</span><meta property="datePublished" content="2022-04-28T03:20:16.000Z"></span><!----><!----><span class="reading-time-info" aria-label="阅读时间⌛" data-balloon-pos="down" localizeddate="2022年4月28日" isoriginal="false" pageview="false"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="timer icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>大约 5 分钟</span><meta property="timeRequired" content="PT5M"></span></div><hr></div><!----><!----><div class="theme-hope-content"><h4 id="tsconfig-json-配置" tabindex="-1"><a class="header-anchor" href="#tsconfig-json-配置" aria-hidden="true">#</a> tsconfig.json 配置</h4><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token doc-comment comment">/**************基础配置**************/</span>
+        <span class="token doc-comment comment">/**************基础配置**************/</span>
+        <span class="token doc-comment comment">/**************基础配置**************/</span>
+        <span class="token comment">/* 开启增量编译：TS 编译器在第一次编译的时候，会生成一个存储编译信息的文件，下一次编译的时候，会根据这个文件进行增量的编译，以此提高 TS 的编译速度 */</span>
+        <span class="token string-property property">&quot;incremental&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 指定存储增量编译信息的文件位置 */</span>
+        <span class="token string-property property">&quot;tsBuildInfoFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 打印诊断信息 */</span>
+        <span class="token string-property property">&quot;diagnostics&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 打印输出的文件 */</span>
+        <span class="token string-property property">&quot;listEmittedFiles&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 打印编译的文件（包括引用的声明文件）*/</span>
+        <span class="token string-property property">&quot;listFiles&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 指定 ECMAScript 的目标版本: &#39;ES3&#39; (default), &#39;ES5&#39;, &#39;ES2015&#39;, &#39;ES2016&#39;, &#39;ES2017&#39;, &#39;ES2018&#39;, &#39;ES2019&#39; or &#39;ESNEXT&#39;. */</span>
+        <span class="token string-property property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 指定模块代码的生成方式: &#39;none&#39;, &#39;commonjs&#39;, &#39;amd&#39;, &#39;system&#39;, &#39;umd&#39;, &#39;es2015&#39;, or &#39;ESNext&#39;. */</span>
+        <span class="token string-property property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commonjs&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 指定要包含在编译中的库文件——引用类库——即申明文件，如果输出的模块方式是 es5，就会默认引入 &quot;dom&quot;,&quot;es5&quot;,&quot;scripthost&quot;  */</span>
+        <span class="token comment">/* 如果在 TS 中想要使用一些 ES6 以上版本的语法，就需要引入相关的类库 */</span>
+        <span class="token string-property property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 允许编译 JS 文件 */</span>
+        <span class="token string-property property">&quot;allowJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 检查 JS 文件*/</span>
+        <span class="token string-property property">&quot;checkJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 指定 JSX 代码生成的模式: &#39;preserve&#39;, &#39;react-native&#39;, or &#39;react&#39;. */</span>
+        <span class="token comment">/* &#39;react&#39; 模式下：TS 会直接把 jsx 编译成 js */</span>
+        <span class="token comment">/* &#39;preserve&#39; 模式下：TS 不会把 jsx 编译成 js，会保留 jsx */</span>
+        <span class="token string-property property">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span>
+
+
+        <span class="token doc-comment comment">/**************声明文件相关配置**************/</span>
+        <span class="token doc-comment comment">/**************声明文件相关配置**************/</span>
+        <span class="token doc-comment comment">/**************声明文件相关配置**************/</span>
+
+        <span class="token comment">/* 生成相应的类型声明文件 —— &#39;.d.ts&#39; */</span>
+        <span class="token string-property property">&quot;declaration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 声明文件的输出路径 */</span>
+        <span class="token string-property property">&quot;declarationDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./d&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 只生成声明文件，不生成 JS */</span>
+        <span class="token string-property property">&quot;emitDeclarationOnly&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 声明文件目录，默认 node_modules/@types */</span>
+        <span class="token string-property property">&quot;typeRoots&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 要导入的声明文件包，默认导入上面声明文件目录下的所有声明文件 */</span>
+        <span class="token string-property property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+
+        <span class="token comment">/* 将多个相互依赖的文件合并并且把编译后的内容输出到一个文件里
+         * 可以用在产出 AMD 模块的场景中
+         * &quot;module&quot;:&quot;amd&quot; 时，当一个模块引入了另外一个模块，编译的时候会把这两个模块的编译结果合并到一个文件中
+         */</span>
+        <span class="token string-property property">&quot;outFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 指定编译文件的输出目录 */</span>
+        <span class="token comment">// &quot;outDir&quot;: &quot;./out&quot;,</span>
+        <span class="token comment">/* 指定输入文件的根目录，用于控制输出目录的结构 */</span>
+        <span class="token string-property property">&quot;rootDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 启用项目编译 */</span>
+        <span class="token string-property property">&quot;composite&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/*  输出的时候移除注释 */</span>
+        <span class="token string-property property">&quot;removeComments&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 不输出文件 */</span>
+        <span class="token string-property property">&quot;noEmit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 发生错误时不输出文件 */</span>
+        <span class="token string-property property">&quot;noEmitOnError&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 不生成 helper 函数，以前的话设置为 true 后，需要额外安装 ts-helpers */</span>
+        <span class="token comment">/* 类似于 babel ，会给每个文件都生成 helper 函数，会使得最终编译后的包的体积变大 */</span>
+        <span class="token string-property property">&quot;noEmitHelpers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 现在可以通过 tslib（TS 内置的库）引入 helper 函数，！！！文件必须是模块 ！！！ */</span>
+        <span class="token comment">/* 编译后自动引入 var tslib_1 = require(&quot;tslib&quot;) */</span>
+        <span class="token string-property property">&quot;importHelpers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 当目标是 ES5 或 ES3 的时候提供对 for-of、扩展运算符和解构赋值中对于迭代器的完整支持 */</span>
+        <span class="token string-property property">&quot;downlevelIteration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 把每一个文件转译成一个单独的模块 */</span>
+        <span class="token string-property property">&quot;isolatedModules&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+
+        <span class="token doc-comment comment">/**************严格检查配置**************/</span>
+        <span class="token doc-comment comment">/**************严格检查配置**************/</span>
+        <span class="token doc-comment comment">/**************严格检查配置**************/</span>
+
+        <span class="token comment">/* 开启所有的严格检查配置 */</span>
+        <span class="token string-property property">&quot;strict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token comment">/* 不允许使用隐式的 any 类型 */</span>
+        <span class="token string-property property">&quot;noImplicitAny&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 不允许把 null、undefined 赋值给其他类型变量 */</span>
+        <span class="token string-property property">&quot;strictNullChecks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 不允许函数参数双向协变 */</span>
+        <span class="token string-property property">&quot;strictFunctionTypes&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 使用 bind/call/apply 时，严格检查函数参数类型 */</span>
+        <span class="token string-property property">&quot;strictBindCallApply&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 类的实例属性必须初始化 */</span>
+        <span class="token string-property property">&quot;strictPropertyInitialization&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 不允许 this 有隐式的 any 类型，即 this 必须有明确的指向*/</span>
+        <span class="token string-property property">&quot;noImplicitThis&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 在严格模式下解析并且向每个源文件中注入 &quot;use strict&quot; */</span>
+        <span class="token string-property property">&quot;alwaysStrict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token doc-comment comment">/**************额外的语法检查配置，这种检查交给 eslint 就行，没必要配置**************/</span>
+        <span class="token doc-comment comment">/**************额外的语法检查配置，这种检查交给 eslint 就行，没必要配置**************/</span>
+        <span class="token doc-comment comment">/**************额外的语法检查配置，这种检查交给 eslint 就行，没必要配置**************/</span>
+
+        <span class="token comment">/* 有未使用到的本地变量时报错 */</span>
+        <span class="token string-property property">&quot;noUnusedLocals&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 有未使用到的函数参数时报错 */</span>
+        <span class="token string-property property">&quot;noUnusedParameters&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 每个分支都要有返回值 */</span>
+        <span class="token string-property property">&quot;noImplicitReturns&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 严格校验 switch-case 语法 */</span>
+        <span class="token string-property property">&quot;noFallthroughCasesInSwitch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token doc-comment comment">/**************模块解析配置**************/</span>
+        <span class="token doc-comment comment">/**************模块解析配置**************/</span>
+        <span class="token doc-comment comment">/**************模块解析配置**************/</span>
+
+        <span class="token comment">/* 指定模块的解析策略: &#39;node&#39; (Node.js) or &#39;classic&#39; (TypeScript pre-1.6)*/</span>
+        <span class="token comment">/* 若未指定，那么在使用了 --module AMD | System | ES2015 时的默认值为 Classic，其它情况时则为 Node */</span>
+        <span class="token string-property property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 在解析非绝对路径模块名的时候的基准路径 */</span>
+        <span class="token string-property property">&quot;baseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 基于 &#39;baseUrl&#39; 的路径映射集合 */</span>
+        <span class="token string-property property">&quot;paths&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 将多个目录放在一个虚拟目录下，用于运行时 */</span>
+        <span class="token comment">/* 当自己编写的库和开发的代码都输出到一个目录下时，开发代码和库的位置不一样，开发代码引入库的路径就会不对 */</span>
+        <span class="token string-property property">&quot;rootDirs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// &quot;rootDirs&quot;: [&quot;src&quot;,&quot;out&quot;],</span>
+
+        <span class="token comment">/* 允许 export = xxx 导出 ，并使用 import xxx form &quot;module-name&quot; 导入*/</span>
+        <span class="token string-property property">&quot;esModuleInterop&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 当模块没有默认导出的时候，允许被别的模块默认导入，这个在代码执行的时候没有作用，只是在类型检查的时候生效 */</span>
+        <span class="token string-property property">&quot;allowSyntheticDefaultImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+
+        <span class="token comment">/* 不要 symlinks 解析的真正路径 */</span>
+        <span class="token string-property property">&quot;preserveSymlinks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 允许在模块中以全局变量的方式访问 UMD 模块内容 */</span>
+        <span class="token string-property property">&quot;allowUmdGlobalAccess&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+
+        <span class="token doc-comment comment">/************** Source Map 配置**************/</span>
+        <span class="token doc-comment comment">/************** Source Map 配置**************/</span>
+        <span class="token doc-comment comment">/************** Source Map 配置**************/</span>
+
+        <span class="token comment">/* 指定 ts 文件位置 */</span>
+        <span class="token string-property property">&quot;sourceRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 指定 map 文件存放的位置 */</span>
+        <span class="token string-property property">&quot;mapRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 生成目标文件的 sourceMap */</span>
+        <span class="token string-property property">&quot;sourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 将代码与sourcemaps生成到一个文件中，要求同时设置了--inlineSourceMap 或--sourceMap 属性*/</span>
+        <span class="token string-property property">&quot;inlineSources&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 生成目标文件的 inline sourceMap —— 源文件和 sourcemap 文件在同一文件中，而不是把 map 文件放在一个单独的文件里*/</span>
+        <span class="token string-property property">&quot;inlineSourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">/* 生成声明文件的 sourceMap */</span>
+        <span class="token string-property property">&quot;declarationMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token doc-comment comment">/************** 实验性的配置**************/</span>
+        <span class="token doc-comment comment">/************** 实验性的配置**************/</span>
+        <span class="token doc-comment comment">/************** 实验性的配置**************/</span>
+
+        <span class="token comment">/* 启用装饰器 */</span>
+        <span class="token string-property property">&quot;experimentalDecorators&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token string-property property">&quot;emitDecoratorMetadata&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>         <span class="token comment">/* Enables experimental support for emitting type metadata for decorators. */</span>
+
+
+        <span class="token doc-comment comment">/**************高级配置**************/</span>
+        <span class="token doc-comment comment">/**************高级配置**************/</span>
+        <span class="token doc-comment comment">/**************高级配置**************/</span>
+
+        <span class="token comment">/* 强制区分大小写 */</span>
+        <span class="token string-property property">&quot;forceConsistentCasingInFileNames&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+
+<span class="token punctuation">}</span>
+
+    <span class="token comment">/* 指定需要编译的单个文件列表 */</span>
+    <span class="token string-property property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token comment">/* 指定需要编译的文件/目录 */</span>
+    <span class="token string-property property">&quot;include&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">//    // 只写一个目录名等价于 &quot;./src/**/*&quot;</span>
+       <span class="token string">&quot;src&quot;</span>
+     <span class="token punctuation">]</span>
+
+    <span class="token comment">/* 需要排除的文件或目录 */</span>
+    <span class="token string-property property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token comment">/* 配置文件继承 */</span>
+    <span class="token string-property property">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./tsconfig.base.json&quot;</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div></div><!----><footer class="page-meta"><div class="meta-item edit-link"><a href="https://github.com/HelloAndyZhang/HelloAndyZhang/edit/main/docs/Web/TypeScript/tsconfig配置.md" rel="noopener noreferrer" target="_blank" aria-label="编辑此页" class="nav-link label"><!--[--><svg xmlns="http://www.w3.org/2000/svg" class="icon edit-icon" viewbox="0 0 1024 1024" fill="currentColor" aria-label="edit icon"><path d="M430.818 653.65a60.46 60.46 0 0 1-50.96-93.281l71.69-114.012 7.773-10.365L816.038 80.138A60.46 60.46 0 0 1 859.225 62a60.46 60.46 0 0 1 43.186 18.138l43.186 43.186a60.46 60.46 0 0 1 0 86.373L588.879 565.55l-8.637 8.637-117.466 68.234a60.46 60.46 0 0 1-31.958 11.229z"></path><path d="M728.802 962H252.891A190.883 190.883 0 0 1 62.008 771.98V296.934a190.883 190.883 0 0 1 190.883-192.61h267.754a60.46 60.46 0 0 1 0 120.92H252.891a69.962 69.962 0 0 0-69.098 69.099V771.98a69.962 69.962 0 0 0 69.098 69.098h475.911A69.962 69.962 0 0 0 797.9 771.98V503.363a60.46 60.46 0 1 1 120.922 0V771.98A190.883 190.883 0 0 1 728.802 962z"></path></svg><!--]-->编辑此页<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!----></a></div><div class="meta-item update-time"><span class="label">上次编辑于: </span><span class="info">2022/4/28 03:20:16</span></div><!----></footer><nav class="page-nav"><!----><a href="/Web/TypeScript/%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0.html" class="nav-link next" aria-label="工具函数"><div class="hint">下一页<span class="arrow right"></span></div><div class="link">工具函数<!----></div></a></nav><!----><!----><!--]--></main><!--]--><!----><!--]--></div><!--]--><!----><!--]--></div>
+    <script type="module" src="/assets/app.29f60bb5.js" defer></script>
+  </body>
+</html>
